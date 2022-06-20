@@ -1,0 +1,133 @@
+body {
+    background-color: #1E1E1C;
+    margin: 0;
+    height: 98.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+}
+
+.containerGeral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 95vw;
+    height: 92vh;
+    border: solid;
+    border-radius: 18px;
+    color: #fff;
+}
+
+.containerCabeçalho {
+    display: flex;
+    flex-direction: row;
+    margin-left: -4vw;
+}
+
+#voltarHome {
+    margin-right: 10vw;
+    margin-bottom: 2vh;
+    border: solid;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 3.5vh;
+    padding-left: 3.5vh;
+    box-shadow: 0 5px 0 #fff;
+}
+
+#voltarHome:active {
+    position:relative;
+    top:5px;
+    box-shadow:none;
+}
+
+#casinha {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+#tittle {
+    margin-top: 5vh;
+    font-size: 1.7vw;
+}
+
+.containerQuestao {
+    border: solid;
+    border-radius: 25px;
+    width: 45vw;
+    height: 75vh;
+    margin-left: -4vw;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.containerPapyrus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insiraSoluçao {
+    font-size: 1.7vw;
+}
+
+.containerArquivo {
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    font-size: 0.8vw;
+    margin-bottom: 4vh;
+    border: solid;
+    border-radius: 45px;
+}
+
+.botaoArquivo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-right: solid;
+    height: 6vh;
+    border-color: #fff;
+    padding: 5px 25px;
+}
+
+#setinha {
+    height: 4vh;
+    margin-left: 15px;
+}
+
+#inputArquivo { display: none; }
+
+#papyrus {
+    height: 62vh;
+    margin-bottom: 3vh;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+#modal {
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid;
+    border-color: #FF3434;
+    border-radius: 25px;
+    width: 35vw;
+    height: 35vh;
+    z-index: 2;
+    text-align: center;
+}
+
+#modal p {
+    font-size: 1.7vw;
+}

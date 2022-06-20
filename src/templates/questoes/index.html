@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/questoes/styles.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="{{url_for('static', filename='js/questoes/index.js')}}" defer></script>
+    <title>Python Code</title>
+</head>
+
+<body>
+    <div class="containerGeral">
+        <div>
+            <div class="containerTexto">
+                <div class="containerCabeçalho">
+                    <a id="voltarHome" href="#">
+                        <img id="casinha" src="{{url_for('static', filename='imgs/Home.png')}}" alt="Home">
+                    </a>
+
+                    <p id="tittle">Desafio 1</p>
+                </div>
+
+                <div class="containerQuestao">
+                    <p>{{questions['enunciado']}}</p>
+                    <p>Nome da funcão:{{questions['nome_funcao']}}</p>
+                    <p>Tipo do valor de entrada:{{questions['tipo_valor_entrada']}}</p>
+                    <p>Tipo do valor da saída:{{questions['tipo_valor_saida']}}</p>
+                    <p>Exemplo valor de entrada: {{questions['valor_entrada']}}</p>
+                    <p>Exemplo valor de saída: {{questions['valor_saida']}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerPapyrus">
+            <p id="insiraSoluçao">Insira a <br> solução:</p>
+
+            <form action="/questoes" method="post" class="containerArquivo" enctype="multipart/form-data">
+                <div class="botaoArquivo">Nenhum<br>arquivo<br>selecionado</div>
+                <input type="file" id="inputArquivo" name="questao">
+                <button id="send">
+                    <img id="setinha" src="{{url_for('static', filename='imgs/Triangulo.png')}}" name="setinha"
+                        alt="Setinha">
+                </button>
+            </form>
+
+            <img id="papyrus" src="{{url_for('static', filename='imgs/Papyrus.png')}}" alt="Papyrus">
+        </div>
+    </div>
+    {% if controller == False: %}
+        <div id="modal">
+            <h1>Atenção!</h1>
+            <p>O arquivo<br>selecionado está<br>fora do padrão!</p>
+            <p>Envie novamente um<br>arquivo válido.</p>
+        </div>
+    {% endif %}
+</body>
+
+</html>

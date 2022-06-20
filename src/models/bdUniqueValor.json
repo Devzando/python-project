@@ -1,0 +1,1 @@
+{"id": 1, "enunciado": "Fa\u00e7a uma fun\u00e7\u00e3o que ir\u00e1 receber como par\u00e2metro um conjunto de n\u00fameros e retorne o maior n\u00famero dentre eles", "nome_funcao": "execution", "tipo_valor_entrada": "[int]", "tipo_valor_saida": "int", "valor_entrada": "[12,34,22,455,78]", "valor_saida": "455"}

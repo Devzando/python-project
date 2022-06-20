@@ -1,0 +1,31 @@
+
+    [
+        {
+            "id": 0,
+            "enunciado": "Faça uma função que irá receber como parâmetro o nome de N pessoas e exiba os nomes ordenados",
+            "nome_funcao":"execution",
+            "tipo_valor_entrada": "[str]",
+            "tipo_valor_saida": "[str]",
+            "valor_entrada":"Nomes: [gabriel, mariana, tomas, marcelo]",
+            "valor_saida":"[gabriel,marcelo,mariana,tomas]"
+        },
+        {
+            "id": 1,
+            "enunciado": "Faça uma função que irá receber como parâmetro um conjunto de números e retorne o maior número dentre eles",
+            "nome_funcao":"execution",
+            "tipo_valor_entrada": "[int]",
+            "tipo_valor_saida": "int",
+            "valor_entrada":"[12,34,22,455,78]",
+            "valor_saida":"455"
+        },
+        {
+            "id": 2,
+            "enunciado": "Faça uma função que irá receber como parâmetro um conjunto de números e retorne esse conjunto de números de maneira em ordem crescente mas só contendo os números ímpares",
+            "nome_funcao":"execution",
+            "tipo_valor_entrada": "[int]",
+            "tipo_valor_saida": "[int]",
+            "valor_entrada":"[12,34,67.15.23]",
+            "valor_saida":"[15,23,67]"
+        }
+
+    ]
